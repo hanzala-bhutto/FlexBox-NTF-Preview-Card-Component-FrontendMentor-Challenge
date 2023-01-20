@@ -1,0 +1,106 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+
+.nft-box > h1,p, .price, .card-footer{
+    margin: 15px 20px 15px 20px;
+}
+
+.equilib-img{
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+h1{
+    font-size: x-large;
+    color: hsl(0, 0%, 100%);
+}
+
+.info-1{
+    color:hsl(215, 51%, 70%);
+}
+
+.info-2{
+    color: hsl(0, 0%, 100%);
+}
+
+
+p{
+    color:hsl(215, 51%, 70%);
+}
+
+
+.price{    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-items: center;
+}
+
+.price-left{
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+}
+
+.price-right{
+    margin:auto;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    color:hsl(215, 51%, 70%);
+}
+
+.price-left>span, .price-right>span{
+    margin-left: 5px;
+}
+
+.profile, .info-1,.info-2{
+    vertical-align: middle;
+}
+
+
+.profile{
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+h1:hover,.info-2:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.equilib-img:hover{
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%);
+}
+
+.line{
+    background-color: hsl(215, 32%, 27%);
+    height: 2px;
+    width: 260px;
+    margin: auto;
+}
