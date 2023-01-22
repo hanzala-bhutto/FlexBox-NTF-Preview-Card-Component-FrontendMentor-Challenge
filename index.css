@@ -26,13 +26,6 @@ body{
     margin: 15px 20px 15px 20px;
 }
 
-.equilib-img{
-    margin: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-
-}
-
 h1{
     font-size: x-large;
     color: hsl(0, 0%, 100%);
@@ -46,6 +39,11 @@ h1{
     color: hsl(0, 0%, 100%);
 }
 
+
+h1:hover,.info-2:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
 
 p{
     color:hsl(215, 51%, 70%);
@@ -73,6 +71,10 @@ p{
     color:hsl(215, 51%, 70%);
 }
 
+.card-footer{
+
+}
+
 .price-left>span, .price-right>span{
     margin-left: 5px;
 }
@@ -88,19 +90,46 @@ p{
     margin-right: 10px;
 }
 
-h1:hover,.info-2:hover{
-    cursor: pointer;
-    color: hsl(178, 100%, 50%);
+
+.img-container{
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 20px 10px 20px;
 }
 
-.equilib-img:hover{
+.img-container img{
+    width: 100%;
+    display: block;
+}
+
+.img-overlay{
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.3);
+    display: none;
+}
+
+.img-overlay img {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-container:hover .img-overlay{
+    display: block;
     cursor: pointer;
-    background-color: hsl(178, 100%, 50%);
 }
 
 .line{
     background-color: hsl(215, 32%, 27%);
     height: 2px;
     width: 260px;
-    margin: auto;
+    margin: 10px 20px 0px 20px;
 }
+
